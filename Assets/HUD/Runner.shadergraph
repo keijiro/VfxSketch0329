@@ -481,7 +481,7 @@
     "m_SourceType": 1,
     "m_FunctionName": "ParamAnim",
     "m_FunctionSource": "",
-    "m_FunctionBody": "Param *= 0.5;\nParam -= 0.1;\n\nTime *= 0.5;\nTime = smoothstep(0, 1, frac(Time));\nTime = smoothstep(0, 1, Time);\nTime = smoothstep(0, 1, Time);\n\nOut = 0.8 < frac(Param + Time);"
+    "m_FunctionBody": "Param *= 0.5;\nParam -= 0.1;\n\nTime *= 0.25;\nTime = smoothstep(0, 1, frac(Time));\nTime = smoothstep(0, 1, Time);\nTime = smoothstep(0, 1, Time);\n\nOut = 0.8 < frac(Param + Time);"
 }
 
 {

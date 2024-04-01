@@ -635,7 +635,7 @@
     "m_SourceType": 1,
     "m_FunctionName": "Fading",
     "m_FunctionSource": "",
-    "m_FunctionBody": "float2 p = UV - 0.5;\nfloat l = sin(length(p) * 4 - Time * 2);\nOut = lerp(0, 0.2, saturate(l));"
+    "m_FunctionBody": "float2 p = UV - 0.5;\nfloat l = sin(length(p) * 4 - Time * PI / 2) - 0.5;\nOut = lerp(0, 0.2, saturate(l));"
 }
 
 {
@@ -978,7 +978,7 @@
     "m_SourceType": 1,
     "m_FunctionName": "Crosses",
     "m_FunctionSource": "",
-    "m_FunctionBody": "float2 p = UV;\n\nfloat2 l = abs(frac(p * 20) - 0.5) * 2 > 0.75;\nfloat2 d = frac(p * 200) < 0.5;\n\nOut = min(l.x, l.y);// * min(d.x, d.y);"
+    "m_FunctionBody": "float2 p = UV;\n\nfloat2 l = abs(frac(p * 20) - 0.5) * 2 > 0.8;\nfloat2 d = frac(p * 200) < 0.5;\n\nOut = min(l.x, l.y);// * min(d.x, d.y);"
 }
 
 {
