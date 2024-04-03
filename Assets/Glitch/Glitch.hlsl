@@ -20,5 +20,5 @@ void GlitchPattern_float
     float n1 = GlitchPattern_Noise(p1);
     float n2 = GlitchPattern_Noise(p2);
     float n3 = GlitchPattern_Noise(p3);
-    Out = (n1 + n2 + n3) * 0.37;
+    Out = (n1 + n2 + n3) * 0.3;
 }
